@@ -5,6 +5,36 @@
 
 <!DOCTYPE  html>
 <head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<div id="contact" class="contact">
+ <h3>
+       
+         214 W. Grand Blvd. </h3>
+       <h3> Detroit, MI 48216 </h3>
+         <h3> elmuseodelnorte@gmail.com 
+        
+        </h3>
+        </div>
+        
+        <div id="welcome" class="welcome">
+ 		<h1>
+       
+         Learn more about our </h1>
+       <h1> collaboration with the </h1>
+         <h1> DIA last May 
+        
+        </h1>
+      
+        </div>
+		
+<div id="facebookicon" class="icon"> <img src= "https://image.freepik.com/free-icon/facebook-letter-logo_318-40258.jpg" IMG STYLE="position: absolute; top: 30px; left: 150px; width: 37px; height: 40px;"> </div>
+
+<div id="shop" class="icon"> <img src= "https://68.media.tumblr.com/5e290816b243cbd9f803608282d8299a/tumblr_okymelvj5G1ule1efo1_250.png" IMG STYLE="position: absolute; top: 30px; left: 100px; width: 40px; height: 40px;"> </div>
+  
+<hr> 
+  
 		<link rel="shortcut icon" type="image/jpg" href="https://68.media.tumblr.com/a2697e134b6e7d6be5511b9c82b6262b/tumblr_okx5iu5ebz1ule1efo1_250.jpg" />
         <link href="stylesheet.css" type="text/css" rel="stylesheet">
 	    <div id="logo" class="big"> <img src="http://68.media.tumblr.com/01004c282781cb48ab1df065a5e69795/tumblr_okvgv2a1fl1riyu0fo1_r1_1280.png#http://68.media.tumblr.com/01004c282781cb48ab1df065a5e69795/tumblr_okvgv2a1fl1riyu0fo1_r1_500.png" IMG STYLE="position: absolute; TOP: 0px; RIGHT: 70px; WIDTH: 320px; HEIGHT: 200px" > </div>
@@ -37,11 +67,25 @@
           </ul>
           </h2>
           </div>
+          
+          <div class="linear-gradient"></div>
    
-   <div id="emdnphoto" class="big"> <img src="https://68.media.tumblr.com/95d7190842273ee9bf4d63308d9de948/tumblr_okx863m7il1riyu0fo1_1280.png" IMG STYLE="position: absolute; BOTTOM: 20px; LEFT: 90px; WIDTH: 450px; HEIGHT: 300px" > </div>
+   <div id="emdnphoto" class="big"> <img src="https://68.media.tumblr.com/95d7190842273ee9bf4d63308d9de948/tumblr_okx863m7il1riyu0fo1_1280.png" IMG STYLE="position: absolute; BOTTOM: 120px; LEFT: 100px; WIDTH: 450px; HEIGHT: 300px" > </div>
  
 
+
 <style>
+
+		hr { 
+    display: block;
+	position: absolute
+    top: 300px;
+    bottom: 500px;
+    margin-left: 100px;
+    margin-right: 700px;
+    border-style: solid;
+    border-width: 3px;
+} 
   	
 		h2 {
       text-align: right;
@@ -59,6 +103,44 @@
     font-size: 28px;
 	
 }
+
+.contact {
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    font-size: 10px;
+	
+}
+
+.welcome {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    font-size: 20px;
+	text-align: justify;
+  	margin: 0 auto;
+  	
+	
+}
+
+h3 {
+      text-align: left;
+      color: black;
+      font-family: helvetica;
+      line-height: 0.9; 
+	  font-size: 10px
+	  font-weight: bold 
+    	}
+
+h1 {
+      text-align: justify;
+      color: black;
+      font-family: helvetica;
+      line-height: 0.4; 
+	  font-size: 20 px
+	  font-weight: bold 
+    	}
+	
 	
 	li{
       text-align: right;
@@ -67,7 +149,63 @@
       line-height: .9; 
 	}
 	
+	hr{
+		position: absolute; top: 50px; left: 110px; width: 100px;
+		border: solid;
+	}
+
+.linear-gradient{
+    background: linear-gradient(blue, white); 
+}
+.linear-gradient{
+    width:10000px;
+    height:100px;
+	position: absolute; 
+	BOTTOM: 0px; 
+	LEFT: -10px; 
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+	
+}
+	
+}
+	
   </style>
 </body>
+
+<script src="https://use.typekit.net/mwh1who.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<script>
+	$(document).ready(function() { 
+		for (var a=[],i=0;i<11;++i) a[i]=i;
+		function shuffle(array) {
+		  var tmp, current, top = array.length;
+		  if(top) while(--top) {
+		    current = Math.floor(Math.random() * (top + 1));
+		    tmp = array[current];
+		    array[current] = array[top];
+		    array[top] = tmp;
+		  }
+		  return array;
+		}
+		a = shuffle(a);
+		console.log(a);
+		$('#emdnphoto').css("order" , ""+a[0]+"");
+		console.log(a[0]);
+		$('#contentdirectory0').css("order" , ""+a[1]+"");
+		$('#logo').css("order" , ""+a[2]+"");
+		$('#welcome').css("order" , ""+a[3]+"");
+		$('#contact').css("order" , ""+a[4]+"");
+		
+	})
+	</script>
+    
+    
+
+
 </head>
 </html>
